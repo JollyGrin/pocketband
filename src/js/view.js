@@ -12,7 +12,7 @@ export const renderKit = result => {
         <div class="column is-one-third">
             <div class="card box">
                     <h2 class="title">
-                            ${result.fields.KitName}
+                        
                         </h2>
                         <video class="vidCard" controls>
                             <source
@@ -35,6 +35,6 @@ export const renderKit = result => {
 };
 
 export const renderKits = (results) => {
-    results.forEach(renderKit); 
-    console.log(results);   
+    // results.forEach(renderKit); 
+    // console.log(results);   
 };
