@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "package.json", "use": "@now/static-build" },
+    { "src": "api/*.js", "use": "@now/node" }
+  ],
+  "routes": [
+    {
+      "src": "^/api/(.*)",
+      "dest": "/api/index.js"
+    }
+  ],
+  "build": {
+    "env": {
+      "API_KEY": "@pb_apikey",
+      "BASE":"@pb_base"
+    }
+  }
+}
