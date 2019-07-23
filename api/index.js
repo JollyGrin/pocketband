@@ -1,4 +1,5 @@
 module.exports = (req, res) => {
-  const { name = 'World' } = req.query
-  res.status(200).send(`Hello ${name}!`)
+  { res.end(process.env.base) }
 }
+
+// https://zeit.co/guides/deploying-a-mongodb-powered-api-with-node-and-now/?query=api
