@@ -10,10 +10,8 @@
       "dest": "/api/index.js"
     }
   ],
-  "build": {
-    "env": {
-      "API_KEY": "@pb_apikey",
-      "BASE":"@pb_base"
-    }
+  "env": {
+    "API_KEY": "@pb_apikey",
+    "BASE":"@pb_base"
   }
 }

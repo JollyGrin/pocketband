@@ -9,7 +9,7 @@ export const getKits = async (doneBehavior) => {
         endpointUrl: 'https://api.airtable.com',
         apiKey: process.env.API_KEY
     });
-    const base = Airtable.base(process.env.BASE);
+    const base = Airtable.base(process.env.base);
     const table = base('Kits');
 
     let acc = [];
